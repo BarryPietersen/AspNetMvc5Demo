@@ -1,0 +1,22 @@
+﻿@model MvcDemo.Models.Product
+@* 
+    about the above line of code -
+    we are telling the web page what type it will receive during run time,
+    using the @model followed by the fully qualified namespace and the type.
+    notice the @model syntax with lowercase 'm' this does not change the way
+    we access the web pages Model property with upper 'M'
+*@
+@{
+    ViewBag.Title = "ProductResult";
+
+    //if we would prefer to create our own reference to work with, 
+    //an explicit casting of the Model property can be used instead
+    MvcDemo.Models.Product product = (MvcDemo.Models.Product)Model;
+}
+
+<h2>Product</h2>
+<p>@Model.ToString()</p>
+<br />
+
+<div class="comment-text">we have successfully displayed the product model in the view</div>
+

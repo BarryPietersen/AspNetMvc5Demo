@@ -1,0 +1,19 @@
+﻿@model MvcDemo.Models.Person
+@*
+    about the above line of code -
+    we are telling the web page what type it will receive during run time,
+    using the @model followed by the fully qualified namespace and the type.
+    notice the @model syntax with lowercase 'm' this does not change the way
+    we access the web pages Model property with upper 'M'
+*@
+@{
+    ViewBag.Title = "Welcome";
+
+    //if we would prefer to create our own reference to work with, 
+    //an explicit casting of the Model property can be used instead
+    MvcDemo.Models.Person person = (MvcDemo.Models.Person)Model;
+}
+
+<h2>Welcome</h2>
+@Model.UserInfo
+

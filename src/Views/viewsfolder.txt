@@ -1,0 +1,9 @@
+﻿by default when we create a new controller visual studio will automatically create a subfolder
+within the Views folder with the same name as the controller but without the 'Controller' suffix
+----------------------------------------------------------------------------------------------------------
+
+the Views folder contains all of the websites cshtml, aspx, _ViewStart.cshtml and the shared folder we are already familiar with  
+
+remeber when an action method is invoked with a view by default the first folder it will look to will be the folder
+that matches the controller name for example HomeController.Index() will result in the Views/Home/Index.cshtml being searched
+MVC will ultimately search all subfolders and files within the Views folder for the named view as a last minute attempt

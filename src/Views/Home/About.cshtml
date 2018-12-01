@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+<h3>We are now viewing the respose from the Home/About controller and action method</h3>
+<hr />
+<div class="comment-text">
+    <strong>Task:</strong><br />
+    <ul>
+        <li>Paste the below url text into your browsers url bar after localhost:{###} and have a play around with the url parameter values</li>
+        <li>Set a break point in the ProcessPersonData action method in the Home controller.</li>
+        <li>Observe how the model binder can map the values to our c# classes - in this case the parameter expected by the action method is of type Person</li>
+    </ul>
+    the model binder will try its best to instantiate a Person based on available data packaged with the request.
+</div>
+<br />
+<div>
+<strong>URL Text: /Home/ProcessPersonData?id=1&firstname=myfirstname&lastname=mylastname</strong>
+</div>

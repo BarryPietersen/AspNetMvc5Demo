@@ -1,0 +1,11 @@
+﻿by convention this folder contains all of our MVC controller classes
+Controllers must come under the namespace PrjectName.Controllers to be recognised as controllers
+Controllers must inherit from the base class Controller in order to behave like an mvc controller
+-----------------------------------------------------------------------------------------------------
+
+remeber our definition for controllers:
+-Provide a set of useful properties and behaviours inherited from the base class ‘Controller’
+-Contain our ‘Action Methods’ which process requests, any data that has been packaged with a request and generate appropriate responses.
+-Action Methods are invoked and our request/response processing begins by making calls to external resources such as database and other domain specific logic.
+-Controllers Group together related Action Methods 
+-Controllers pass models and other data to the appropriate views or generate other response types

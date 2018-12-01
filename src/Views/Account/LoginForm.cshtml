@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "LoginForm";
+}
+<h2>Login Here</h2>
+
+<form action="@Url.Action("UserProfile","Account")" method="post">
+
+    @Html.TextBox("username", "", new { placeholder = "[username]" })
+    @Html.Password("password", "", new { placeholder = "[password]" })
+    <button type="submit" name="btnSubmit">login</button>
+
+</form>
+<hr />
+<div class="comment-text">
+    this form is displaying a response from the 'Account'Controller and its 'LoginForm' action method<br /><br />
+    <strong>Task:</strong><br />
+    <ul>
+        <li>create a new controller with action methods</li>
+        <li>create a simple model or use one already defined in the models folder</li>
+        <li>create basic views to input data and display the model</li>
+        <li>pass the model to your action method and display it in the view</li>
+    </ul>
+</div>

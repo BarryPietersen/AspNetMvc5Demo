@@ -1,0 +1,42 @@
+﻿@* A regular layout page we are already familiar with *@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <style>
+        body {
+            padding:10px;
+        }
+        .comment-text {
+            color: forestgreen;
+            font-size: medium;
+            font-weight: 600;
+            width: 500px;
+        }
+        .apply-calibri {
+            font-family:Calibri;
+        }
+        a {
+            text-decoration: none;
+            font-size:larger;
+            font-weight:bold;
+        }
+        ul {
+            margin-top: 0px;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body class="apply-calibri">
+    <nav>
+        <div>
+            @Html.ActionLink("Home", "Index", "Home") |
+            @Html.ActionLink("About", "About", "Home") |
+            @Html.ActionLink("Create Product", "New", "Product") |
+            @Html.ActionLink("Login", "LoginForm", "Account")
+        </div>
+    </nav>
+    <hr />
+    @RenderBody()
+</body>
+</html>

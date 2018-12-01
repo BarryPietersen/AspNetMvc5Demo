@@ -1,0 +1,9 @@
+﻿in this folder we store all of our model classes and application/domain specific types.
+refernce these classes under the namespace using projectname.Models, in the case of this demo - MvcDemo.Models
+----------------------------------------------------------------------------------------------------------------
+
+remeber our definitions for models
+-These classes represent data and behaviours of our domain specific objects in the form of regular C# classes
+-Often store data retrieved from a database
+-Have no dependency on the controllers or views
+-Easy to package data and process them in either a view response or other ActionResult types

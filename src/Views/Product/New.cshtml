@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Create a New Product</h2>
+
+<form action="@Url.Action("Create","Product")" method="put">
+    <select name="type">
+        <option value="none">Type</option>
+        <option value="Movie">Movie</option>
+        <option value="Music">Music</option>
+        <option value="Game">Game</option>
+    </select>
+    <input type="text" name="name" value="" placeholder="[prod name]" />
+    <label for="price">$</label>
+    <input type="text" name="price" value="" placeholder="[price]" />
+    <button type="submit" name="btnSubmit">Create</button>
+</form>
+<hr />
+
+<div class="comment-text">
+    submit the form data back up to the server, the target action method Product/Create accepts a Product as a parameter.
+    notice if the request did not contain any data that match the properties in our 'Product' class then the binder will set those properties to a default value or null.
+    <br /><br /><strong>Task: </strong>
+    <ul>
+        <li>set a break point inside the Product/CreateNew action method</li>
+        <li>enter data and submit the form</li>
+        <li>observe the current stack in the locals window</li>
+        <li>step into the View() method and see our Product model available here</li>
+    </ul>                                                                                                                                                                                         
+</div>
